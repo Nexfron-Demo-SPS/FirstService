@@ -19,4 +19,13 @@ management:
   endpoints:
     web:
       exposure:
-        include: ['refresh']
+        include: ['refresh', 'health', 'info']
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: First Service
+    description: First Service Application
+    version: 1.0.0
